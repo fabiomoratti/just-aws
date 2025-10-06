@@ -1,3 +1,12 @@
+# Project and custom excludes
+# ---------------------------
+
+# Exclude JetBrains IDE
+.idea/
+
+# Auto generated python-related excludes
+# --------------------------------------
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
