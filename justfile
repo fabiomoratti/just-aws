@@ -64,8 +64,8 @@ setup_common target_dir=("install-test"):
         read -rp "Bucket endpoint - depends on the region where the bucket has been created [${default_bucket_endpoint}]: " stack_bucket_endpoint
         stack_bucket_endpoint=${stack_bucket_endpoint:-${default_bucket_endpoint}}
 
-        read -rp "OS User [ec2user]: " os_user
-        os_user=${os_user:-ec2user}
+        read -rp "OS User [ec2-user]: " os_user
+        os_user=${os_user:-ec2-user}
 
         echo "Selected values are:"
         echo "---------------------------------------------------"
@@ -130,8 +130,8 @@ setup_additional_common target_dir=("install-test"):
         read -rp "Bucket endpoint - depends on the region where the bucket has been created [${default_bucket_endpoint}]: " stack_bucket_endpoint
         stack_bucket_endpoint=${stack_bucket_endpoint:-${default_bucket_endpoint}}
 
-        read -rp "OS User [ec2user]: " os_user
-        os_user=${os_user:-ec2user}
+        read -rp "OS User [ec2-user]: " os_user
+        os_user=${os_user:-ec2-user}
 
         echo "Selected values are:"
         echo "---------------------------------------------------"
