@@ -1,3 +1,10 @@
+# -----------------------------------------------------------------------------
+# Just reference documentation
+# -----------------------------------------------------------------------------
+# https://github.com/casey/just
+# https://just.systems/man/en/chapter_1.html
+# https://cheatography.com/linux-china/cheat-sheets/justfile/
+# -----------------------------------------------------------------------------
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Note: I've encountered some unexpected behaviour in Windows running shebang recipes using '#bash' directly without "/"
@@ -18,8 +25,8 @@
 # - https://just.systems/man/en/safer-bash-shebang-recipes.html#shebang-recipe-execution-on-windows
 # - https://just.systems/man/en/script-recipes.html#script-recipes
 # - https://just.systems/man/en/script-and-shebang-recipe-temporary-files.html
-# export JUST_DUMMY_VARIABLE := "JUST_DUMMY_VALUE"
 # ----------------------------------------------------------------------------------------------------------------------
+export JUST_DUMMY_VARIABLE := "JUST_DUMMY_VALUE"
 bash_shebang := if os() == 'windows' {
 	'/bin/bash'
 } else {
@@ -29,8 +36,6 @@ bash_shebang := if os() == 'windows' {
 bash_options_for_just := 'set -euxo pipefail'
 
 bash_noprint := 'set +x'
-
-
 
 install target_dir=("install-test"): \
     (copy_files target_dir) \

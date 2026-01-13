@@ -26,6 +26,10 @@ bash_shebang := if os() == 'windows' {
 	'/bin/bash'
 }
 
+bash_options_for_just := 'set -euxo pipefail'
+
+bash_noprint := 'set +x'
+
 import 'env-functions.just'
 import 'stack-functions.just'
 import 'changeset-functions.just'
